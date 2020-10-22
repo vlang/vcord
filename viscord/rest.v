@@ -28,7 +28,7 @@ fn (c Connection) post(p string, data string) ?http.Response {
 		"content-type": "application/json"
 	}
 
-	res := http.fetch("https://discordapp.com/api/v6/$p", http.FetchConfig{
+	res := http.fetch("https://discord.com/api/v6/$p", http.FetchConfig{
 		method: "post",
 		headers: headers,
 		data: data
@@ -42,7 +42,7 @@ fn (c Connection) delete(p string) ?http.Response {
 		"content-type": 'application/json'
 	}
 
-	res := http.fetch("https://discordapp.com/api/v6/$p", http.FetchConfig{
+	res := http.fetch("https://discord.com/api/v6/$p", http.FetchConfig{
 		method: "delete",
 		headers: headers
 	})
@@ -55,7 +55,7 @@ fn (c Connection) put(p string, data string) ?http.Response {
 		"content-type": 'application/json'
 	}
 
-	res := http.fetch("https://discordapp.com/api/v6/$p", http.FetchConfig{
+	res := http.fetch("https://discord.com/api/v6/$p", http.FetchConfig{
 		method: "put",
 		headers: headers,
 		data: data
