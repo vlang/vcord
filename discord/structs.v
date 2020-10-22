@@ -247,8 +247,8 @@ pub:
 	mentions			[]User
 	//mention_roles		[]string
 	//mention_channels	[]ChannelMention
-	//attachments			[]Attachment
-	//embeds				[]Embed
+	//attachments		[]Attachment
+	//embeds			[]Embed
 	//reactions			[]Reaction
 	nonce				string
 	pinned				bool
